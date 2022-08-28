@@ -8,7 +8,7 @@ const Showcase = () => {
 		<div className="showcase">
 			<div>
 				<p>
-					Heading Goes <br />
+					Heading Go <br />
 					Here
 				</p>
 			</div>
