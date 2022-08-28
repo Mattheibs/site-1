@@ -1,0 +1,104 @@
+.panel {
+    margin-bottom: 10vw;
+}
+
+.panel h3 {
+    font-size: calc(8px + 0.55vw);
+    color: #29458F;
+    font-weight: 700;
+    padding-top: 1.5vw;
+}
+
+.panel p {
+    font-size: calc(8px + 0.63vw);
+    color: black;
+    font-weight: 300;
+}
+
+.panel .topsec {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 5.2vw;
+}
+
+.panel .topsec p {
+    width: 21.8vw;
+}
+
+.panel .panels {
+    display: flex;
+    justify-content: center;
+    gap: 2.2vw;
+}
+
+.panel .panel {
+    width: calc(60px + 21vw);
+    height: calc(190px + 23vw);
+    background-color: white;
+    box-shadow: 12px 31px 106px rgba(25, 37, 69, 0.16);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: ease-in-out 0.3s;
+}
+
+.panel .panel:hover {
+    transform: scale(1.2);
+}
+
+.panel .panel p {
+    width: calc(40px + 17vw);
+}
+
+.panel button {
+    width: calc(50px + 4vw);
+    height: 1.9vw;
+    border-radius: 25px;
+    background-color: #29458F;
+    border: none;
+    color: white;
+    font: calc(8px + 0.63vw);
+    margin-top: 1vw;
+}
+
+@media only screen and (max-width: 440px) {
+    .panel .topsec p {
+        width: 195px;
+    }
+
+    .panel h3 {
+        font-size: 15px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .panel .panels {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.2vw;
+    }
+
+    .panel .panel {
+        width: 225px;
+        height: 171px;
+    }
+
+    .panel .panel p {
+        width: 155px;
+    }
+
+    .panel .pmiddle {
+        height: 320px;
+    }
+
+    .panel button {
+        width: 80px;
+        height: 20px;
+    }
+}

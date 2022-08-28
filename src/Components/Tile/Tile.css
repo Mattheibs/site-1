@@ -1,0 +1,103 @@
+.tiles {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: calc(200px + 12vw);
+}
+
+.tile {
+    background-color: white;
+    box-shadow: 12px 31px 106px rgba(25, 37, 69, 0.16);
+    border-radius: 15px;
+    width: 16.2vw;
+    margin: 0 -9vw;
+    padding: 0.8vw 1.8vw 0 1.8vw;
+}
+
+.inntile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tile h3 {
+    font-size: calc(8px + 0.6vw);
+    color: #1B2646;
+    padding: 0;
+    margin: 0;
+    padding-top: 1vw;
+    padding-bottom: 0.5vw;
+}
+
+.tile p {
+    font-size: calc(8px + 0.6vw);
+    color: #000000;
+    font-weight: 300;
+    margin: 0;
+}
+
+.t1 {
+    height: calc(100px + 4.1vw);
+}
+
+.t1 img {
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+.t2 {
+    height: calc(120px + 10.5vw);
+}
+
+.t2 img {
+    height: 1.4vw;
+    width: 1.3vw;
+}
+
+.t3 {
+    height: calc(120px + 4.6vw);
+}
+
+.t3 img {
+    height: 1.25vw;
+    width: 1.5vw;
+}
+
+@media only screen and (max-width: 1200px) {
+    .tile {
+        width: 23vw;
+        margin: 0 -3vw;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .tiles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 150px;
+    }
+
+    .tile {
+        width: 263px;
+        height: 133px;
+        padding-left: 22px;
+    }
+
+    .tile img {
+        width: 22px;
+        height: 20px;
+        padding-top: 13px;
+        padding-bottom: 9px;
+    }
+
+    .tile p {
+        width: 220px;
+        font-size: 10px;
+
+    }
+
+    .t2 {
+        height: 177px;
+    }
+}

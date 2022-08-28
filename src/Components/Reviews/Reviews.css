@@ -1,0 +1,154 @@
+.reviews {
+    display: flex;
+    justify-content: center;
+    padding-bottom: calc(100px + 8vw);
+}
+
+.reviews .banner {
+    background-image: linear-gradient(to top right, #1D3A87 50%, #7A8FC6);
+    width: 85.5vw;
+    border-radius: 15px;
+    height: 16vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.reviews p {
+    font-size: calc(8px + 0.63vw);
+    font-weight: 300;
+}
+
+.reviews h3 {
+    font-size: calc(8px + 0.55vw);
+    font-weight: 700;
+}
+
+.reviews .circle {
+    width: 3.9vw;
+    height: 3.9vw;
+    background-color: #1E3B87;
+    border-radius: 50%;
+    margin-left: 1.1vw;
+    margin-top: -1vw;
+}
+
+.reviews .review {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 12px 31px 106px rgba(25, 37, 69, 0.16);
+    margin-top: 3.5vw;
+}
+
+.reviews .r1 {
+    width: 22.2vw;
+    height: calc(120px + 9vw);
+}
+
+.reviews .r2 {
+    width: 31.2vw;
+    height: calc(130px + 13.3vw);
+}
+
+.reviews .r3 {
+    width: 22.2vw;
+    height: calc(120px + 9vw);
+}
+
+.reviews .stars {
+    padding-top: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    justify-content: right;
+}
+
+.reviews .stars img {
+    height: 0.99vw;
+    width: 0.99vw;
+}
+
+.reviews .revhead {
+    display: flex;
+}
+
+.reviews .revhead h3 {
+    padding-top: 0.5vw;
+    padding-left: 1.1vw;
+}
+
+.reviews .review p {
+    width: 15vw;
+    padding-left: 2.8vw;
+}
+
+.reviews .r2 p {
+    width: 26vw;
+}
+
+@media only screen and (max-width: 440px) {
+    .reviews .banner {
+        background-image: linear-gradient(to right, #1D3A87 70%, #7A8FC6);
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        border-radius: 0;
+        height: 560px;
+        align-items: center;
+    }
+
+    .reviews {
+        margin: 10px 0;
+    }
+
+    .reviews .review {
+        width: 258px;
+        height: 151px;
+        margin-top: 0px;
+        padding: 0;
+    }
+
+    .reviews .r2 {
+        height: 170px;
+    }
+
+    .reviews .review p {
+        width: 211px;
+        padding-left: 29px;
+    }
+
+    .reviews h3 {
+        font-size: 15px;
+        padding-top: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding-left: 10px !important;
+    }
+
+    .reviews .stars img {
+        height: 12px;
+        width: 12px;
+    }
+
+    .reviews .circle {
+        width: 31px;
+        height: 31px;
+        margin-left: 9px;
+    }
+
+    .reviews {
+        padding-bottom: 56px;
+    }
+
+    .reviews .stars {
+        padding-right: 18px;
+        padding-top: 10px;
+    }
+
+    .r1 {
+        margin-top: 20px !important;
+    }
+
+    .r3 {
+        margin-bottom: 20px !important;
+    }
+}

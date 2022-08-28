@@ -1,0 +1,134 @@
+.tile2 {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: calc(120px + 10.5vw);
+}
+
+.tile2 .lefttile {
+    width: 20.5vw;
+    height: 16.7vw;
+    margin-top: -4vw;
+}
+
+.tile2 .lefttile h3 {
+    font-size: calc(8px + 0.55vw);
+    color: #1B2646;
+    font-weight: 700;
+}
+
+.tile2 .lefttile p {
+    font-size: calc(8px + 0.63vw);
+    color: black;
+    font-weight: 300;
+    width: calc(100px + 15vw);
+}
+
+.tile2 .lefttile p:nth-of-type(3) {
+    color: #274288;
+}
+
+.tile2 .boxes {
+    position: relative;
+    width: 20.4vw;
+    height: 16.8vw;
+    display: flex;
+    align-items: center;
+    margin: 0 -7.8vw;
+}
+
+.box1 {
+    right: -2.5vw;
+    position: absolute;
+    width: 26.3vw;
+    height: 21.7vw;
+    background-color: white;
+    z-index: 1000;
+    border-radius: 15px;
+    opacity: 0.75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 img {
+    width: 20.1vw;
+    height: 14vw;
+    filter: saturate(900%) brightness(95%) contrast(60%);
+}
+
+.box2 {
+    position: absolute;
+    height: 18.9vw;
+    width: 17.9vw;
+    right: 8.8vw;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 12px 31px 106px rgba(25, 37, 69, 0.25);
+}
+
+.box3 {
+    position: absolute;
+    height: 14.8vw;
+    width: 13.8vw;
+    right: 15.7vw;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 12px 31px 106px rgba(25, 37, 69, 0.25);
+    opacity: 0.75;
+}
+
+.tile2 .right-box {
+    width: 26vw;
+    height: 21.7vw;
+    top: -2.5vw;
+    position: absolute;
+    left: -1.8vw;
+    box-shadow: 12px 31px 106px rgba(25, 37, 69, 0.25);
+    background-color: white;
+    opacity: 0.75;
+    z-index: 100;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.tile2 .right-box img {
+    width: 20.2vw;
+    height: 14.2vw;
+    filter: saturate(900%) brightness(95%) contrast(60%);
+}
+
+.tile2 .circle {
+    width: 90vw;
+    height: 44vw;
+    z-index: 100;
+}
+
+@media only screen and (max-width: 440px) {
+    .tile2 {
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    .tile2 .boxes {
+        position: absolute;
+        right: 50%;
+    }
+
+    .tile2 .circle {
+        width: 287px;
+        height: 209px;
+        z-index: 100;
+    }
+
+    .right-box {
+        margin-left: 250px !important;
+        margin-top: -31px !important;
+        display: flex;
+    }
+
+    .lefttile {
+        display: none;
+    }
+}

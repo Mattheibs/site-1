@@ -1,0 +1,84 @@
+.about {
+    display: flex;
+    justify-content: left;
+    gap: 17.6vw;
+    padding-left: 10.8vw;
+    padding-bottom: calc(100px + 0.1vw);
+}
+
+.about div:nth-of-type(2) {
+    margin-top: 15.7vw;
+    width: calc(200px + 17vw);
+    height: 17.4vw;
+}
+
+.about .phone {
+    width: 17.5vw;
+    height: 34.1vw;
+}
+
+.about .powerimg {
+    width: 1.6vw;
+    height: 1.6vw;
+}
+
+.about button {
+    width: calc(50px + 4vw);
+    height: 1.9vw;
+    border-radius: 25px;
+    background-color: #29458F;
+    border: none;
+    color: white;
+    font: calc(8px + 0.63vw);
+}
+
+.about div h3 {
+    font-size: calc(8px + 0.55vw);
+    color: #1B2646;
+    font-weight: 700;
+}
+
+.about div p {
+    font-size: calc(8px + 0.63vw);
+    color: black;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 1400px) {
+    .about div:nth-of-type(2) {
+        margin-top: 10.7vw;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .about {
+        flex-direction: row-reverse;
+        gap: 32px;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .about .phone {
+        width: 83px;
+        height: 159px;
+    }
+
+    .about div p {
+        font-size: 10px;
+    }
+
+    .about div:nth-of-type(2) {
+        margin-top: -20px;
+        width: 119px;
+    }
+
+    .about button {
+        width: 79px;
+        height: 23px;
+    }
+
+    .about .powerimg {
+        width: 32px;
+        height: 32px;
+    }
+}
